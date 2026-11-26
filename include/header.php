@@ -35,5 +35,5 @@
 
 <?php 
        
-            include 'usernav.php';
+            include 'navigation.php';   // public menu (usernav.php is for signed-in donors)
 ?>
