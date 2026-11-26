@@ -1,0 +1,36 @@
+<!-- contact us section -->
+			<div class="container-fluid">					
+				<div class="row contactus">
+					<div class="col-md-6 offset-md-3">
+						<h1 class="text-center">Contact Us</h1>
+						<hr class="white-bar">
+
+							<h1 class="text-center">
+								<a  target="_blank" href="https://www.instagram.com/who_alok/"><i style="color: #fff;" class="fab fa-instaagram-square"></i></a>
+
+								<a target="_blank" href="https://www.youtube.com/@alokroy4416"><i style="color: #fff;" class="fab fa-youtube-square"></i></a> 
+							</h1>
+
+							<div class="details">
+							<h1 class="text-center">
+								 <p> 01323248117 <i class="fa fa-phone"></i></p>
+								 <p>ralok3915@gmail.com <i class="fa fa-envelope"></i> </p>
+								 </h1>
+							</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- end contact us section -->
+			
+	    <!-- JQuery File -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    
+    <!-- BootStrap JS File-->
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Fontawesome Icon JS-->
+    <script defer src="fontawesome/js/all.js"></script>
+
+	</body>
+</html>
