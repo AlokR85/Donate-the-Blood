@@ -2,6 +2,12 @@
 
 A blood donation website built with PHP and MySQL. People can sign up as blood donors, and anyone who needs blood can look for donors by district and blood group. It covers all 64 districts of Bangladesh.
 
+**Live preview:** https://alokr85.github.io/Donate-the-Blood/
+
+[![Live preview](https://img.shields.io/badge/Live%20preview-Open%20website-E74C3C?style=for-the-badge)](https://alokr85.github.io/Donate-the-Blood/)
+
+> The live preview shows every page and the full design. It runs on GitHub Pages, which cannot run PHP, so the forms there do not save data. To try the database features, run the project on XAMPP as shown below.
+
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
