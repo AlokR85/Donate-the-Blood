@@ -16,16 +16,18 @@ $contact = $_POST['contact'];
 $save_life = $_POST['save_life'];
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT); // Hashing password for security
 
-// Insert into database
-$sql = "INSERT INTO donor (name, gender, email, city, dob, contact, save_life, password)
-        VALUES ('$name', '$gender', '$email', '$city', '$dob', '$contact', '$save_life', '$password')";
+// Insert into database with a prepared statement (safe from SQL injection)
+$stmt = $conn->prepare("INSERT INTO donor (name, gender, email, city, dob, contact, save_life, password)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssssssss", $name, $gender, $email, $city, $dob, $contact, $save_life, $password);
 
-if ($conn->query($sql) === TRUE) {
+if ($stmt->execute()) {
     echo "New donor registered successfully!";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Sorry, registration failed. Please try again.";
 }
 
+$stmt->close();
 $conn->close();
 }
 ?>

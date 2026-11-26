@@ -39,7 +39,7 @@
 					                <option value="B+">B+</option>
 					                <option value="B-">B-</option>
 					                <option value="O+">O+</option>
-					                <option value="O-">O+</option>
+					                <option value="O-">O-</option>
 					                <option value="AB+">AB+</option>
 					                <option value="AB-">AB-</option>
 					              </select>
@@ -63,7 +63,88 @@
 							<div class="form-group">
 								<label for="city">City</label>
 								              <select name="city" id="city" class="form-control demo-default" required>
-									<option value=""> </option><optgroup title="Azad Jammu and Kashmir (Azad Kashmir)" label="&raquo; Azad Jammu and Kashmir (Azad Kashmir)"></optgroup><option value="Bagh" >Bagh</option><option value="Bhimber" >Bhimber</option><option value="Kotli" >Kotli</option><option value="Mirpur" >Mirpur</option><option value="Muzaffarabad" >Muzaffarabad</option><option value="Neelum" >Neelum</option><option value="Poonch" >Poonch</option><option value="Sudhnati" >Sudhnati</option><optgroup title="Balochistan" label="&raquo; Balochistan"></optgroup><option value="Awaran" >Awaran</option><option value="Barkhan" >Barkhan</option><option value="Bolan" >Bolan</option><option value="Chagai" >Chagai</option><option value="Dera Bugti" >Dera Bugti</option><option value="Gwadar" >Gwadar</option><option value="Jafarabad" >Jafarabad</option><option value="Jhal Magsi" >Jhal Magsi</option><option value="Kalat" >Kalat</option><option value="Kech" >Kech</option><option value="Kharan" >Kharan</option><option value="Khuzdar" >Khuzdar</option><option value="Kohlu" >Kohlu</option><option value="Lasbela" >Lasbela</option><option value="Loralai" >Loralai</option><option value="Mastung" >Mastung</option><option value="Musakhel" >Musakhel</option><option value="Naseerabad" >Naseerabad</option><option value="Nushki" >Nushki</option><option value="Panjgur" >Panjgur</option><option value="Pishin" >Pishin</option><option value="Qilla Abdullah" >Qilla Abdullah</option><option value="Qilla Saifullah" >Qilla Saifullah</option><option value="Quetta" >Quetta</option><option value="Sibi" >Sibi</option><option value="Zhob" >Zhob</option><option value="Ziarat" >Ziarat</option><optgroup title="Federally Administered Tribal Areas (FATA" label="&raquo; Federally Administered Tribal Areas (FATA"></optgroup><option value="Bajaur Agency" >Bajaur Agency</option><option value="Khyber Agency" >Khyber Agency</option><option value="Kurram Agency" >Kurram Agency</option><option value="Mohmand Agency" >Mohmand Agency</option><option value="North Waziristan Agency" >North Waziristan Agency</option><option value="Orakzai Agency" >Orakzai Agency</option><option value="South Waziristan Agency" >South Waziristan Agency</option><optgroup title="Islamabad Capital" label="&raquo; Islamabad Capital"></optgroup><option value="Islamabad" >Islamabad</option><optgroup title="North-West Frontier Province (NWFP)" label="&raquo; North-West Frontier Province (NWFP)"></optgroup><option value="Abbottabad" >Abbottabad</option><option value="Bannu" >Bannu</option><option value="Batagram" >Batagram</option><option value="Buner" >Buner</option><option value="Charsadda" >Charsadda</option><option value="Chitral" >Chitral</option><option value="Dera Ismail Khan" >Dera Ismail Khan</option><option value="Dir Lower" >Dir Lower</option><option value="Dir Upper" >Dir Upper</option><option value="Hangu" >Hangu</option><option value="Haripur" >Haripur</option><option value="Karak" >Karak</option><option value="Kohat" >Kohat</option><option value="Kohistan" >Kohistan</option><option value="Lakki Marwat" >Lakki Marwat</option><option value="Malakand" >Malakand</option><option value="Mansehra" >Mansehra</option><option value="Mardan" >Mardan</option><option value="Nowshera" >Nowshera</option><option value="Peshawar" >Peshawar</option><option value="Shangla" >Shangla</option><option value="Swabi" >Swabi</option><option value="Swat" >Swat</option><option value="Tank" >Tank</option><optgroup title="Punjab" label="&raquo; Punjab"></optgroup><option value="Alipur" >Alipur</option><option value="Attock" >Attock</option><option value="Bahawalnagar" >Bahawalnagar</option><option value="Bahawalpur" >Bahawalpur</option><option value="Bhakkar" >Bhakkar</option><option value="Chakwal" >Chakwal</option><option value="Chiniot" >Chiniot</option><option value="Dera Ghazi Khan" >Dera Ghazi Khan</option><option value="Faisalabad" >Faisalabad</option><option value="Gujranwala" >Gujranwala</option><option value="Gujrat" >Gujrat</option><option value="Hafizabad" >Hafizabad</option><option value="Jhang" >Jhang</option><option value="Jhelum" >Jhelum</option><option value="Kasur" >Kasur</option><option value="Khanewal" >Khanewal</option><option value="Khushab" >Khushab</option><option value="Lahore" >Lahore</option><option value="Layyah" >Layyah</option><option value="Lodhran" >Lodhran</option><option value="Mandi Bahauddin" >Mandi Bahauddin</option><option value="Mianwali" >Mianwali</option><option value="Multan" >Multan</option><option value="Muzaffargarh" >Muzaffargarh</option><option value="Nankana Sahib" >Nankana Sahib</option><option value="Narowal" >Narowal</option><option value="Okara" >Okara</option><option value="Pakpattan" >Pakpattan</option><option value="Rahim Yar Khan" >Rahim Yar Khan</option><option value="Rajanpur" >Rajanpur</option><option value="Rawalpindi" >Rawalpindi</option><option value="Sahiwal" >Sahiwal</option><option value="Sargodha" >Sargodha</option><option value="Sheikhupura" >Sheikhupura</option><option value="Shekhupura" >Shekhupura</option><option value="Sialkot" >Sialkot</option><option value="Toba Tek Singh" >Toba Tek Singh</option><option value="Vehari" >Vehari</option><optgroup title="Sindh" label="&raquo; Sindh"></optgroup><option value="Badin" >Badin</option><option value="Dadu" >Dadu</option><option value="Ghotki" >Ghotki</option><option value="Hyderabad" >Hyderabad</option><option value="Jacobabad" >Jacobabad</option><option value="Jamshoro" >Jamshoro</option><option value="Karachi" >Karachi</option><option value="Kashmore" >Kashmore</option><option value="Khairpur" >Khairpur</option><option value="Larkana" >Larkana</option><option value="Matiari" >Matiari</option><option value="Mirpur Khas" >Mirpur Khas</option><option value="Naushahro Feroze" >Naushahro Feroze</option><option value="Nawabshah" >Nawabshah</option><option value="Qambar Shahdadkot" >Qambar Shahdadkot</option><option value="Sanghar" >Sanghar</option><option value="Shikarpur" >Shikarpur</option><option value="Sukkur" >Sukkur</option><option value="Tando Allahyar" >Tando Allahyar</option><option value="Tando Muhammad Khan" >Tando Muhammad Khan</option><option value="Tharparkar" >Tharparkar</option><option value="Thatta" >Thatta</option><option value="Umerkot" >Umerkot</option></select>
+								              	<option value=""> </option>
+								              	<optgroup label="Barishal Division">
+								              		<option value="Barguna">Barguna</option>
+								              		<option value="Barishal">Barishal</option>
+								              		<option value="Bhola">Bhola</option>
+								              		<option value="Jhalokati">Jhalokati</option>
+								              		<option value="Patuakhali">Patuakhali</option>
+								              		<option value="Pirojpur">Pirojpur</option>
+								              	</optgroup>
+								              	<optgroup label="Chattogram Division">
+								              		<option value="Bandarban">Bandarban</option>
+								              		<option value="Brahmanbaria">Brahmanbaria</option>
+								              		<option value="Chandpur">Chandpur</option>
+								              		<option value="Chattogram">Chattogram</option>
+								              		<option value="Cox&#39;s Bazar">Cox&#39;s Bazar</option>
+								              		<option value="Cumilla">Cumilla</option>
+								              		<option value="Feni">Feni</option>
+								              		<option value="Khagrachhari">Khagrachhari</option>
+								              		<option value="Lakshmipur">Lakshmipur</option>
+								              		<option value="Noakhali">Noakhali</option>
+								              		<option value="Rangamati">Rangamati</option>
+								              	</optgroup>
+								              	<optgroup label="Dhaka Division">
+								              		<option value="Dhaka">Dhaka</option>
+								              		<option value="Faridpur">Faridpur</option>
+								              		<option value="Gazipur">Gazipur</option>
+								              		<option value="Gopalganj">Gopalganj</option>
+								              		<option value="Kishoreganj">Kishoreganj</option>
+								              		<option value="Madaripur">Madaripur</option>
+								              		<option value="Manikganj">Manikganj</option>
+								              		<option value="Munshiganj">Munshiganj</option>
+								              		<option value="Narayanganj">Narayanganj</option>
+								              		<option value="Narsingdi">Narsingdi</option>
+								              		<option value="Rajbari">Rajbari</option>
+								              		<option value="Shariatpur">Shariatpur</option>
+								              		<option value="Tangail">Tangail</option>
+								              	</optgroup>
+								              	<optgroup label="Khulna Division">
+								              		<option value="Bagerhat">Bagerhat</option>
+								              		<option value="Chuadanga">Chuadanga</option>
+								              		<option value="Jashore">Jashore</option>
+								              		<option value="Jhenaidah">Jhenaidah</option>
+								              		<option value="Khulna">Khulna</option>
+								              		<option value="Kushtia">Kushtia</option>
+								              		<option value="Magura">Magura</option>
+								              		<option value="Meherpur">Meherpur</option>
+								              		<option value="Narail">Narail</option>
+								              		<option value="Satkhira">Satkhira</option>
+								              	</optgroup>
+								              	<optgroup label="Mymensingh Division">
+								              		<option value="Jamalpur">Jamalpur</option>
+								              		<option value="Mymensingh">Mymensingh</option>
+								              		<option value="Netrokona">Netrokona</option>
+								              		<option value="Sherpur">Sherpur</option>
+								              	</optgroup>
+								              	<optgroup label="Rajshahi Division">
+								              		<option value="Bogura">Bogura</option>
+								              		<option value="Chapainawabganj">Chapainawabganj</option>
+								              		<option value="Joypurhat">Joypurhat</option>
+								              		<option value="Naogaon">Naogaon</option>
+								              		<option value="Natore">Natore</option>
+								              		<option value="Pabna">Pabna</option>
+								              		<option value="Rajshahi">Rajshahi</option>
+								              		<option value="Sirajganj">Sirajganj</option>
+								              	</optgroup>
+								              	<optgroup label="Rangpur Division">
+								              		<option value="Dinajpur">Dinajpur</option>
+								              		<option value="Gaibandha">Gaibandha</option>
+								              		<option value="Kurigram">Kurigram</option>
+								              		<option value="Lalmonirhat">Lalmonirhat</option>
+								              		<option value="Nilphamari">Nilphamari</option>
+								              		<option value="Panchagarh">Panchagarh</option>
+								              		<option value="Rangpur">Rangpur</option>
+								              		<option value="Thakurgaon">Thakurgaon</option>
+								              	</optgroup>
+								              	<optgroup label="Sylhet Division">
+								              		<option value="Habiganj">Habiganj</option>
+								              		<option value="Moulvibazar">Moulvibazar</option>
+								              		<option value="Sunamganj">Sunamganj</option>
+								              		<option value="Sylhet">Sylhet</option>
+								              	</optgroup>
+								              </select>
 							</div><!--city end-->
 							
 							<div class="form-group">

@@ -1,34 +1,7 @@
 <?php 
 
 	//include header file
-	include ('config.php');
 	include ('include/header.php');
-
-?>
-
-<?php
-$name = "John Doe";
-$gender = "Male";
-$email = "john@example.com";
-$city = "New York";
-$dob = "1990-05-15";
-$contact = "1234567890";
-$save_life = "Yes";
-$password_hash = password_hash("yourpassword", PASSWORD_DEFAULT); // always hash passwords!
-
-// Insert query
-$sql = "INSERT INTO donor (id, name, gender, email, city, dob, contact, save_life, password)
-VALUES (NULL, '$name', '$gender', '$email', '$city', '$dob', '$contact', '$save_life', '$password_hash')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New donor inserted successfully!";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-// Close connection
-$conn->close();
-
 
 ?>
 <div class="container-fluid header-img">
@@ -48,16 +21,88 @@ $conn->close();
 							<div class="form-group text-center justify-content-center">
 							
 								<select style="width: 220px; height: 45px;" name="city" id="city" class="form-control demo-default" required>
-								<option value="">-- Select --</option><optgroup title=" Chittagong " label="&raquo; Chittagong ">
-									</optgroup><option value=" Khulshi " > Khulshi </option><option value="South Khulshi " >South khulshi </option><option value=" Nasirabad " >Nasirabad</option><option value="Bodharhat" >Bodharhat</option><option value="Gec" >Gec</option><option value="Muradpur" >Muradpur</option><option value=" Halisohor" >Halisohor</option><option value="Alongkar" >Alongkar</option><option value="Agrabad" >Agrabad</option><option value=" Dewanhat" >Dewanhat</option><option value="Agrabad" >Agrabad</option>
-									<optgroup title="sylthet" label= "&raquo; Sylhet"></optgroup><option value="Balaganj" >Balaganj</option><option value="Companiganj" >Companiganj</option><option value="Fenchuganj" >Fenchuganj</option><option value="Golapganj" >Golapganj</option><option value=" Kanaighat" > Kanaighat</option><option value="Bhaluka" >Bhaluka</option><option value="Gafargaon" >Gafargaon</option><option value="Tarakanda" >Tarakanda</option><option value="Haluaghat" >Haluaghat</option>
-									<optgroup title="Dhaka Capital" label="&raquo; Dhaka Capital"></optgroup><option value="dhandmondi" >dhandmondi</option><option value="Shahbagh" >Shahbagh</option><option value="Ramna" >Ramna</option><option value="Motijheel" >Motijheel</option><option value="Paltan" >Paltan</option><option value="New Market" >New Market</option><option value="Mirpur" >Mirpur</option>
-									<optgroup title="Dinajpur " label="&raquo; Dinajpur"></optgroup><option value="Rajbari" >Rajbari</option>
-									<optgroup title="Rajshahi" label="&raquo; Rajshahi"></optgroup><option value="Shalbagan" >Shalbagan</option><option value="Ghoramara" >Ghoramara</option><option value="Shaheb Bazar" >Shaheb Bazar</option><option value="Laxmipur" >Laxmipur</option><option value="Terokhadia" >Terokhadia</option><option value="Durgapur" >Durgapur</option><option value="Bagmara" >Bagmara</option><option value="Bornali Mor" >Bornali Mor</option><option value="Dir Upper" >Dir Upper</option><option value="Hangu" >Hangu</option>
-									
-									<optgroup title="Barishal" label="&raquo; Barishal"></optgroup><option value="Barishal Sadar" >Barishal Sadar</option><option value="Bakerganj" >Bakerganj</option><option value="Mehendiganj" >Mehendiganj</option><option value="Banglabazar" >Banglabazar</option><option value="Rupatali Housing" >Rupatali Housing</option><option value="Chakwal" >Chakwal</option><option value="Chiniot" >Chiniot</option><option value="Dera Ghazi Khan" >Dera Ghazi Khan</option><option value="Faisalabad" >Faisalabad</option><option value="Gujranwala" >Gujranwala</option>
-									<optgroup title="Khulna" label="&raquo; khulna"></optgroup><option value="Badin" >Badin</option><option value="Dadu" >Dadu</option><option value="Ghotki" >Ghotki</option><option value="Hyderabad" >Hyderabad</option><option value="Jacobabad" >Jacobabad</option><option value="Jamshoro" >Jamshoro</option><option value="Karachi" >Karachi</option><option value="Kashmore" >Kashmore</option><option value="Khairpur" >Khairpur</option><option value="Larkana" >Larkana</option>
-									<option value="Matiari" >Matiari</option><option value="Mirpur Khas" >Mirpur Khas</option><option value="Naushahro Feroze" >Naushahro Feroze</option><option value="Nawabshah" >Nawabshah</option><option value="Qambar Shahdadkot" >Qambar Shahdadkot</option><option value="Sanghar" >Sanghar</option><option value="Shikarpur" >Shikarpur</option><option value="Sukkur" >Sukkur</option><option value="Tando Allahyar" >Tando Allahyar</option><option value="Tando Muhammad Khan" >Tando Muhammad Khan</option><option value="Tharparkar" >Tharparkar</option><option value="Thatta" >Thatta</option><option value="Umerkot" >Umerkot</option></select>
+									<option value="">-- Select --</option>
+									<optgroup label="Barishal Division">
+										<option value="Barguna">Barguna</option>
+										<option value="Barishal">Barishal</option>
+										<option value="Bhola">Bhola</option>
+										<option value="Jhalokati">Jhalokati</option>
+										<option value="Patuakhali">Patuakhali</option>
+										<option value="Pirojpur">Pirojpur</option>
+									</optgroup>
+									<optgroup label="Chattogram Division">
+										<option value="Bandarban">Bandarban</option>
+										<option value="Brahmanbaria">Brahmanbaria</option>
+										<option value="Chandpur">Chandpur</option>
+										<option value="Chattogram">Chattogram</option>
+										<option value="Cox&#39;s Bazar">Cox&#39;s Bazar</option>
+										<option value="Cumilla">Cumilla</option>
+										<option value="Feni">Feni</option>
+										<option value="Khagrachhari">Khagrachhari</option>
+										<option value="Lakshmipur">Lakshmipur</option>
+										<option value="Noakhali">Noakhali</option>
+										<option value="Rangamati">Rangamati</option>
+									</optgroup>
+									<optgroup label="Dhaka Division">
+										<option value="Dhaka">Dhaka</option>
+										<option value="Faridpur">Faridpur</option>
+										<option value="Gazipur">Gazipur</option>
+										<option value="Gopalganj">Gopalganj</option>
+										<option value="Kishoreganj">Kishoreganj</option>
+										<option value="Madaripur">Madaripur</option>
+										<option value="Manikganj">Manikganj</option>
+										<option value="Munshiganj">Munshiganj</option>
+										<option value="Narayanganj">Narayanganj</option>
+										<option value="Narsingdi">Narsingdi</option>
+										<option value="Rajbari">Rajbari</option>
+										<option value="Shariatpur">Shariatpur</option>
+										<option value="Tangail">Tangail</option>
+									</optgroup>
+									<optgroup label="Khulna Division">
+										<option value="Bagerhat">Bagerhat</option>
+										<option value="Chuadanga">Chuadanga</option>
+										<option value="Jashore">Jashore</option>
+										<option value="Jhenaidah">Jhenaidah</option>
+										<option value="Khulna">Khulna</option>
+										<option value="Kushtia">Kushtia</option>
+										<option value="Magura">Magura</option>
+										<option value="Meherpur">Meherpur</option>
+										<option value="Narail">Narail</option>
+										<option value="Satkhira">Satkhira</option>
+									</optgroup>
+									<optgroup label="Mymensingh Division">
+										<option value="Jamalpur">Jamalpur</option>
+										<option value="Mymensingh">Mymensingh</option>
+										<option value="Netrokona">Netrokona</option>
+										<option value="Sherpur">Sherpur</option>
+									</optgroup>
+									<optgroup label="Rajshahi Division">
+										<option value="Bogura">Bogura</option>
+										<option value="Chapainawabganj">Chapainawabganj</option>
+										<option value="Joypurhat">Joypurhat</option>
+										<option value="Naogaon">Naogaon</option>
+										<option value="Natore">Natore</option>
+										<option value="Pabna">Pabna</option>
+										<option value="Rajshahi">Rajshahi</option>
+										<option value="Sirajganj">Sirajganj</option>
+									</optgroup>
+									<optgroup label="Rangpur Division">
+										<option value="Dinajpur">Dinajpur</option>
+										<option value="Gaibandha">Gaibandha</option>
+										<option value="Kurigram">Kurigram</option>
+										<option value="Lalmonirhat">Lalmonirhat</option>
+										<option value="Nilphamari">Nilphamari</option>
+										<option value="Panchagarh">Panchagarh</option>
+										<option value="Rangpur">Rangpur</option>
+										<option value="Thakurgaon">Thakurgaon</option>
+									</optgroup>
+									<optgroup label="Sylhet Division">
+										<option value="Habiganj">Habiganj</option>
+										<option value="Moulvibazar">Moulvibazar</option>
+										<option value="Sunamganj">Sunamganj</option>
+										<option value="Sylhet">Sylhet</option>
+									</optgroup>
+								</select>
 							</div> 
 							<div class="form-group center-aligned">
 								<select name="blood_group" id="blood_group" style="padding: 0 20px; width: 220px; height: 45px;" class="form-control demo-default text-center margin10px">

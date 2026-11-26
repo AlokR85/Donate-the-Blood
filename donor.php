@@ -98,7 +98,7 @@
 	</div>
 </div>
 <div class="loader" id="wait">
-	<i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i>
+	<i class="fa fa-circle-notch fa-spin" aria-hidden="true"></i>
 </div>
 
 <?php	

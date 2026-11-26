@@ -6,14 +6,13 @@
 						<hr class="white-bar">
 
 							<h1 class="text-center">
-								<a  target="_blank" href="https://www.instagram.com/who_alok/"><i style="color: #fff;" class="fab fa-instaagram-square"></i></a>
+								<a  target="_blank" href="https://www.instagram.com/who_alok/"><i style="color: #fff;" class="fab fa-instagram"></i></a>
 
 								<a target="_blank" href="https://www.youtube.com/@alokroy4416"><i style="color: #fff;" class="fab fa-youtube-square"></i></a> 
 							</h1>
 
 							<div class="details">
 							<h1 class="text-center">
-								 <p> 01323248117 <i class="fa fa-phone"></i></p>
 								 <p>ralok3915@gmail.com <i class="fa fa-envelope"></i> </p>
 								 </h1>
 							</div>
